@@ -51,16 +51,16 @@ You are tasked with testing a registration form that has the following input fie
 
 | Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
 |-------------|---------------------------|----------------------------|
-| Age         |                           |                            |
+| Age         |    >=18 <= 120                       <18 >120 non-numeric                           |
 
 ### Task 2: Identify Equivalence Classes for Email
 1. Identify the valid equivalence classes for the Email field.
 2. Identify the invalid equivalence classes for the Email field.
 3. Fill in the table below with the identified equivalence classes.
 
-| Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
-|-------------|---------------------------|----------------------------|
-| Email       |                           |                            |
+| Input Field | Valid Equivalence Classes               | Invalid Equivalence Classes    |
+|-------------|---------------------------|---------------------------------------------------|
+| Email       | valid email format eg 'user@domain.com | invalid email format eg ending with co.uk/org. Missing @ symbol, not actually an email, numbers in email? Missing punctation                             |
 
 ### Task 3: Identify Equivalence Classes for Password
 1. Identify the valid equivalence classes for the Password field.
@@ -69,7 +69,7 @@ You are tasked with testing a registration form that has the following input fie
 
 | Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
 |-------------|---------------------------|----------------------------|
-| Password    |                           |                            |
+| Password    | between 8 and 20 characters (inclusive) and contain at least one uppercase letter, one lowercase letter, and one digit.                          |  less than 8 charaters, or more than or equal to 21 characters (inclusive), not contaning at least one uppercase letter, one lowercase letter, and one digit - or just contaning one or two but not all of these                          |
 
 ### Task 4: Discuss and Share
 1. Discuss your findings with your group.
